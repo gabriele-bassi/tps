@@ -1,0 +1,38 @@
+body{
+    align-items: center;
+    align-content: center;
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+table{
+    width: 30%;
+}
+
+.nome{
+    font-weight: bolder;
+    font-size: 16px;
+    
+}
+
+.mat{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.vot{
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    padding: 1px;
+}
+.pos{
+    color: green;
+}
+.neg{
+    color: red;
+}
+
