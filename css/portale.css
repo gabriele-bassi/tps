@@ -1,0 +1,39 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.header{
+    clear: both;
+    background-color: red;
+    height: 200px;
+}
+.left{
+    float: left;
+    background-color: blue;
+    width: 10%;
+    height: 50vh;
+
+}
+.right{
+    float: left;
+    background-color: green;
+    width:10%;
+    height: 50vh;
+
+}
+.center{
+    float: left;
+    background-color: yellow;
+    width: 80%;
+    height: 50vh;
+    font-size: 25px;
+    text-align: justify;
+    
+}
+.footer{
+    clear: both;
+    background-color: purple;
+    height: 200px;
+
+}
