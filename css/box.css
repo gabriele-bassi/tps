@@ -1,0 +1,20 @@
+#container{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(172, 216, 255);
+    position: absolute;
+}
+#up{
+    width: 100px;
+    height: 80px;
+    background-color: rgb(21, 255, 0);
+    position: relative;
+    top: 1;
+}
+#up{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(146, 23, 146);
+    position: relative;
+    bottom: 1;
+}
