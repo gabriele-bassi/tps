@@ -1,0 +1,11 @@
+#casa {
+    width: 46px;
+    height: 44px;
+    background: url(/images/s.gif) 0 0;
+  }
+  
+#prossimo {
+    width: 43px;
+    height: 44px;
+    background: url(/images/s.gif) -91px 0;
+  }
