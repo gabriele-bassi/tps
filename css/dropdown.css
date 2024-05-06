@@ -3,7 +3,7 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: #333;
+background-color: #a7a7a7;
 }
 
 li {
@@ -29,14 +29,14 @@ display: inline-block;
 .dropdown-content {
 display: none;
 position: absolute;
-background-color: #f9f9f9;
+background-color: #6782fc;
 min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 8px 16px 0px rgba(59, 59, 59, 0.2);
 z-index: 1;
 }
 
 .dropdown-content a {
-color: black;
+color: rgb(30, 0, 138);
 padding: 12px 16px;
 text-decoration: none;
 display: block;
