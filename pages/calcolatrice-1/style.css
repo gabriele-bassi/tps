@@ -1,0 +1,42 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    background-color: rgba(255, 166, 0, 0.202);
+    display: flex;
+    justify-content:center;
+   
+    
+}
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: rgba(255, 166, 0, 0.442) ;
+    border-radius: 20px;
+    padding : 100px;
+}
+
+#splogo{
+    color: orange;
+}
+
+#ok{
+    margin: 10px;
+    background-color:orange;
+    padding: 10px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: bolder;
+    width:100px
+}
+
+.inp{
+    background-color: rgba(255, 248, 236, 0.249);
+    border: 1px solid orange;
+    border-radius: 5px;
+    height: 20px;
+    width:60px;
+}

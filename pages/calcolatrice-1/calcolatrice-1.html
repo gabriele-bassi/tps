@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolatrice.<span id="splogo">Bassi</span></h1>
+
+
+        <label for="one">Inserisci un numero</label>
+        <input placeholder="..." type="number" class="inp" name="one" id="one">
+        <label for="two">Inserisci un numero</label>
+        <input type="number" placeholder="..." class="inp" name="two" id="two">
+
+
+
+        <div class="operatorContainer">
+            <input type="radio" class="radio" name="operator" id="plus" value="+" >+</input><input class="radio" type="radio" value="-" name="operator" id="minus">-</input><input class="radio" value="/" type="radio" name="operator" id="div">/</input><input class="radio" value="*" type="radio" name="operator" id="molt">*</input>
+        </div>
+
+
+        <button onclick="calcola()"  id="ok">calcola</button>
+        <p id="ris"></p>
+    </div>
+</body>
+</html>
