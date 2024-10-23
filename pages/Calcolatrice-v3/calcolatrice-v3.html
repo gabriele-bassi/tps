@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice v3</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <h2>Calcolatrice v3</h2>
+        <div class="container">
+            <input type="text" name=""  id="input">
+            <div class="grid-buttons">
+                <button class="button"value="0" onclick="addToInput('0')">0</button>
+                <button class="button"value="1" onclick="addToInput('1')">1</button>
+                <button class="button"value="2" onclick="addToInput('2')">2</button>
+                <button class="button"value="3" onclick="addToInput('3')">3</button>
+                <button class="button"value="4" onclick="addToInput('4')">4</button>
+                <button class="button"value="5" onclick="addToInput('5')">5</button>
+                <button class="button"value="6" onclick="addToInput('6')">6</button>
+                <button class="button"value="7" onclick="addToInput('7')">7</button>
+                <button class="button"value="8" onclick="addToInput('8')">8</button>
+                <button class="button"value="9" onclick="addToInput('9')">9</button>
+                <button class="button"value="+" onclick="addOperator('+')">+</button>
+                <button class="button"value="-" onclick="addOperator('-')">-</button>
+                <button class="button"value="*" onclick="addOperator('*')" >*</button>
+                <button class="button"value="/" onclick="addOperator('/')" >/</button>
+                <button class="button" value="=" onclick="calcola()">=</button>
+            </div>
+            <input type="text" name="" id="txtRes" placeholder="Risultato..." readonly>
+        </div>
+
+</body>
+</html>
