@@ -12,12 +12,15 @@
 <body>
     <div class="container">
         <h2>Anagrafica</h2>
-        <div class="form">
-            <input type="text" placeholder="nome" class="campi"><input placeholder="cognome" type="text" class="campi"><input placeholder="Indirizzo" type="text" class="campi"><input placeholder="città" type="text" class="campi"><input placeholder="email"
-                type="email" class="campi">
-            <input type="text" placeholder="codice fiscale" class="campi">
-            <button id="btn" onclick="caricaInfo()">Invia</button>
-        </div>
+        <form id="form" onsubmit="caricaInfo()" action="#">
+            <input type="text" placeholder="nome" required pattern="[A-Za-z\u00C0-\u024F]{2,}" class="campi">
+            <input required placeholder="cognome" pattern="[A-Za-z\u00C0-\u024F]{2,}" type="text" class="campi">
+            <input required placeholder="Indirizzo" pattern="[A-Za-z\u00C0-\u024F]{2,}" type="text" class="campi">
+            <input required placeholder="città" type="text" class="campi">
+            <input required placeholder="email"type="email" class="campi">
+            <input required type="text" pattern="[A-Z]{6}[A-Z0-9]{2}[A-Z][A-Z0-9]{2}[A-Z][A-Z0-9]{3}[A-Z]"  placeholder="codice fiscale" class="campi">
+            <input  type="submit"  id="btn"  value="Invia" required/>
+        </form>
         <div id="table">
             <p class="h">Nome</p>
             <p class="h">Cognome</p>
