@@ -1,3 +1,4 @@
+const ctx = document.getElementById('can');
 let anni = new Array();
 let persone = new Array();
 
@@ -62,5 +63,27 @@ const creaTabella = () => {
 
     
     paragraf.innerHTML = '';  
-    paragraf.appendChild(table);}
+    paragraf.appendChild(table);
+    loadchart()
+};
+
+const loadchart = ()=>{
+
+    new Chart(ctx, {
+        type: 'bar',
+    data: {
+      labels: anni,
+      datasets: [{
+        label: 'Sbarchi',
+        data: persone,
+        borderWidth: 1
+    }]
+}
+});
+
+}
+
+
+
+
 
