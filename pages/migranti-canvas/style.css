@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4682b4;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#canvasContainer {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+#barChart {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
