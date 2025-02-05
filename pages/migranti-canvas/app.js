@@ -21,6 +21,9 @@ function analizzaCSV(testo) {
     const righe = testo.split('\n'); // Divide il testo in righe
     const dati = righe.map(riga => {
         riga = riga.replaceAll('"', "")
+        if (isNaN(riga.split(",")[0])) {
+            riga = "0, 0"
+        }
         const [etichetta, valore] = riga.split(','); // Divide ogni riga in etichetta e valore
         return { etichetta, valore: Number(valore) }; // Ritorna un oggetto con etichetta e valore numerico
     });
@@ -69,7 +72,7 @@ function disegnaGraficoLineare(dati) {
         ctx.fill(); // Riempie il cerchio
     });
 
-    // Disegna le etichette dei valori sull'asse Y
+
     ctx.fillStyle = 'black'; // Imposta il colore del testo
     ctx.textAlign = 'right'; // Imposta l'allineamento del testo
     const numEtichette = 10; // Numero di etichette sull'asse Y
@@ -79,7 +82,7 @@ function disegnaGraficoLineare(dati) {
         ctx.fillText(valore.toFixed(0), padding - 10, y); // Disegna l'etichetta
     }
 
-    // Disegna le etichette sull'asse X
+
     ctx.fillStyle = 'black'; // Imposta il colore del testo
     ctx.textAlign = 'center'; // Imposta l'allineamento del testo
     dati.forEach((d, i) => {
